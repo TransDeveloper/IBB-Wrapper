@@ -38,12 +38,12 @@ export class HatGuzergah {
   }
 
   async hatSorgula(options = { HatKodu: '' }) {
-    if (!options.HatKodu) throw new Error('HatKodu was not specified')
+    if (!options.HatKodu) options = { HatKodu: '' };
     return this.execMethod('GetHat_json', options);
   }
 
   async durakSorgula(options = { DurakKodu: '' }){
-    if (!options.DurakKodu) throw new Error('DurakKodu was not specified')
+    if (!options.DurakKodu) options = { DurakKodu: '' };
     return this.execMethod('GetDurak_json', options);
   }
 
