@@ -1,1 +1,5 @@
-// build all apis here - make them accessible from a single class.
+import {HatGuzergah} from "./HatGuzergah.js";
+import {Duyurular} from "./Duyurular.js";
+import {SeferGeceikme} from "./SeferGeceikme.js";
+
+export { HatGuzergah, Duyurular, SeferGeceikme };
